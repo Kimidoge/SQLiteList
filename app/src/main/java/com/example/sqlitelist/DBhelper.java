@@ -51,7 +51,7 @@ public class DBhelper extends SQLiteOpenHelper {
     }
     // ===== READING DATA====================================================
     public Cursor readData(){
-        String query = "SELECT * FROM table1";
+        String query = "SELECT recID AS _id, recID, recContent FROM table1";
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor = null;
         if(db!=null){
